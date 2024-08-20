@@ -61,7 +61,7 @@ public class Experiment12 {
                 String[] line = scanner.nextLine().split(",");
                 if (line.length >= 6) {
                     try {
-                        volumesList.add(Integer.parseInt(line[5]));  // get volume which is in the sixth column
+                        volumesList.add(Integer.parseInt(line[5]));  // get volume
                     } catch (NumberFormatException e) {
                         // Skip invalid rows
                     }
