@@ -23,12 +23,14 @@ public class QuickSort {
 
     // Functions for array partitioning
     private int partition(int[] arr, int low, int high) {
-        // int pivot = arr[high];
+         int pivot = arr[high];
         // Select the last element as the pivot
         //use this pivot selection strategy for experiment1 and experiment2
 
-        int mid = low + (high - low) / 2;
-        int pivot = medianOfThree(arr, low, mid, high);
+
+//        use this pivot selection strategy for experiment 12
+//        int mid = low + (high - low) / 2;
+//        int pivot = medianOfThree(arr, low, mid, high);
         int i = low - 1; //Initializes the pointer of the element smaller than the pivot
 
         /*
