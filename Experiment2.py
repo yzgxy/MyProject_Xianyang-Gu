@@ -33,3 +33,14 @@ plt.ylabel('Running Time (ms)')
 plt.legend()
 plt.savefig('Experiment2_Figure2.png')
 plt.show()
+
+# theoretical performance
+plt.figure(figsize=(10, 6))
+plt.plot(df['Stock Count'], df['Theoretical Comparisons'], label='Theoretical Comparisons', marker='x')
+plt.xlabel('Number of Stocks')
+plt.ylabel('Number of Comparisons')
+plt.legend()
+plt.savefig('Experiment2_Figure3.png')
+plt.show()
+
+
