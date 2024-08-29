@@ -79,6 +79,7 @@ public class Experiment1 {
         if (n <= 1) return 0;
         return 1.386 * (n + 1) * Math.log(n) / Math.log(2) - 2.846 * n + 1.154;
     }
+
     // Save the results for visualization
     private void writeResultsToCSV(List<ExperimentResult1> results, String outputFileName) {
         try (FileWriter writer = new FileWriter(outputFileName)) {
