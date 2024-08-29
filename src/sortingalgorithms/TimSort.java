@@ -38,11 +38,11 @@ public class TimSort implements SortingAlgorithm {
 
     // Insertion sort function
     // Standard insertion sort implementation
-    private void insertionSort(int[] arr, int left, int right) {
-        for (int i = left + 1; i <= right; i++) {
+    private void insertionSort(int[] arr, int low, int high) {
+        for (int i = low + 1; i <= high; i++) {
             int temp = arr[i];
             int j = i - 1;
-            while (j >= left && arr[j] > temp) {
+            while (j >= low && arr[j] > temp) {
                 comparisonCount++;
                 arr[j + 1] = arr[j];
                 j--;

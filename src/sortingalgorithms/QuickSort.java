@@ -31,6 +31,7 @@ public class QuickSort {
 //        use this pivot selection strategy for experiment 12
 //        int mid = low + (high - low) / 2;
 //        int pivot = medianOfThree(arr, low, mid, high);
+
         int i = low - 1; //Initializes the pointer of the element smaller than the pivot
 
         /*
@@ -55,7 +56,7 @@ public class QuickSort {
         arr[j] = temp;
     }
 
-    // Function to perform the median-of-three pivot selection
+    // Function to perform the median-of-three pivot selection for experiment12
     private int medianOfThree(int[] arr, int low, int mid, int high) {
         if (arr[low] > arr[mid]) {
             swap(arr, low, mid);
